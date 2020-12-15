@@ -1,0 +1,222 @@
+*{
+   padding: 0px;
+   margin: 0px;
+   box-sizing: border-box;
+}
+
+body{
+   font-family: 'Poppins', sans-serif;
+   /* background: rgb(245,0,87); */
+   /* background: radial-gradient(circle, rgba(245,0,87,1) 0%, rgba(143,0,51,1) 100%); */
+   /* background: linear-gradient(circle, rgba(245,0,87,1) 0%, rgba(143,0,51,1) 100%); */
+   
+}
+
+.wave{
+   left: 0;
+   bottom: 0;
+   top: 0;
+   z-index: -1;
+   position: fixed;
+   
+   
+}
+
+.container{
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+.image{
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   margin-left: 30px;
+   /* border: 2px solid rgb(212, 0, 255); */
+   
+}
+.image img{
+   width: 500px;
+   
+}
+.login_cont{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   margin: auto;
+   background-color: rgb(255, 255, 255);
+   box-shadow: 3px 3px 20px 2px rgba(59, 59, 59, 0.2);
+   border-radius: 30px;
+   /* border: 2px solid rgb(212, 0, 255); */
+}
+.avatar{
+   width: 100px;
+   margin-top: 30px;
+
+}
+.login_cont h2{
+   font-size: 30px;
+   text-transform: uppercase;
+   margin: 15px 0px 15px 0px;
+}
+
+.main_cont{
+   width: 400px;
+   padding: 0px 25px;
+   position: relative;
+   /* border: 2px solid rgb(255, 174, 0); */
+}
+.main_cont .inputBox {
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   /* border: 2px solid blueviolet; */
+}
+
+.main_cont .inputBox .sub_inputbox{
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   margin-bottom: 30px;
+   border-bottom: 2px solid #F50057;
+   /* border: 2px solid red; */
+}
+
+.main_cont .inputBox .sub_inputbox input{
+   width: 100%;
+   padding: 10px;
+   font-size: 16px;
+   color: rgb(197, 197, 197);
+   letter-spacing: 1px;
+   border: none;
+   outline: none;
+   background: transparent;
+   /* border: 2px solid rgb(0, 255, 13); */
+}
+
+
+.main_cont .inputBox .sub_inputbox label{
+   position: absolute;
+   top: 0;
+   left: 30px;
+   letter-spacing: 1px;
+   margin-left: 0px;
+   padding: 10px 0px;
+   transition: 0.5s;
+   border: none;
+   float: left;
+   font-size: 16px;
+   /* border: 2px solid rgb(0, 148, 62); */
+}
+
+.main_cont .inputBox .sub_inputbox input:focus ~ label,
+.main_cont .inputBox .sub_inputbox input:valid ~ label{
+   top: -20px;
+   left: 30px;
+   color: #F50057;
+   font-size: 12px;
+}
+
+.i{
+   padding: 7px;
+   color: #F50057 ;
+   /* border: 2px solid cyan; */
+}
+
+.submit{
+   display: flex;
+   flex-direction: column;
+   margin-top: 2px;
+   /* border: 2px solid red; */
+}
+
+.btn{
+   background: transparent;
+   outline: none;
+   border: none;
+   border-radius: 50px;
+   background-color: #F50057;
+   padding: 10px 20px;
+   margin: 20px 0px;
+   font-size: 16px;
+   text-transform: capitalize;
+   transition: transform 0.5s;
+}
+
+.btn:hover{
+   background-color:  #F50057;
+   transform: scale(0.95);
+   box-shadow: 2px 2px 5px rgba(59, 59, 59, 0.5);
+   
+}
+a{
+   font-size: 12px;
+   display: flex;
+   align-self: flex-end;
+   color: #F50057 ;
+   text-decoration: none;
+   margin-top: -25px;
+   /* border: 2px solid rgb(255, 75, 225); */
+}
+.sm_login{
+   display: flex;
+   flex-direction: column;
+
+}
+
+.sm_login h4{
+   font-size: 12px;
+   /* border: 2px solid rgb(17, 0, 255); */
+   
+}
+.sm_icons{
+   /* border: 2px solid red; */
+   display: flex;
+   flex-direction: row;
+   margin: 15px;
+   height: 40px;
+}
+.sm_icons a{
+}
+.sm_icons img{
+   transition: transform 0.5s;
+   background: transparent;
+   width: 40px;
+   margin: 0px 6px;
+   border-radius: 50%;
+   
+   
+}
+.sm_icons img:hover{
+   transform: scale(0.95);
+   border-radius: 50%;
+   box-shadow: 2px 2px 5px rgba(59, 59, 59, 0.5);
+
+}
+@media only screen and (max-width: 1008px){
+   .image{
+      display: none;
+   }
+
+   .main_cont{
+      width: 300px;
+      padding: 0px 20px;
+      /* border: 2px solid rgb(255, 174, 0); */
+   }
+   .wave{
+      left: 0;
+      bottom: 0;
+      top: 0;
+      z-index: -1;
+      position: fixed;
+      width: 1900px;
+      
+   }
+}
